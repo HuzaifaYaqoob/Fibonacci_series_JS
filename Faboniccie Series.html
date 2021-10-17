@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello world</title>
+</head>
+
+<body>
+    <script>
+
+
+        var output = []
+        for(let i = 0 ; i < 100; i++ ){
+            if(output.length <= 1){
+                output.push(1)
+            }
+            else{
+                var n = output[i-1] // Null - nAN
+                var y = output[i-2] // this is second last Element as By Formula (n-1) By Indexing
+                output.push(n + y)
+            }
+        }
+
+        // (n + (n-1))
+        // let output = [n-1,n]
+        // let output = [1 , n-1 , n]
+        // let output = [1 , 1 , n-1 , n]
+        // let output = [1 , 1 , 2 , n-1 , n]
+        // let output = [1 , 1 , 2 , 3 , n-1 , n]
+        // let output = [1 , 1 , 2 , 3 , 5 , n-1 , n]
+        // let output = [1 , 1 , 2 , 3 , 5 , 8 , n-1 , n]
+        // let output = [1 , 1 , 2 , 3 , 5 , 8 , 13 , n-1 , n]
+
+        console.log(output)
+
+    </script>
+
+
+</body>
+
+</html>
